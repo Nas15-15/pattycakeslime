@@ -46,14 +46,18 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Bottom Bar */}
                 <div className="border-t border-black/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <p className="text-black/40 text-sm font-medium">
                         © 2026 PattiCakeSlime. All rights reserved.
                     </p>
-                    <p className="text-black/50 text-sm font-medium">
-                        Made by <a href="https://nasware.org" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-black font-bold transition-colors hover:underline decoration-2 underline-offset-4 decoration-vibrant-red/30">Nas</a>
-                    </p>
+                    <div className="flex items-center gap-6">
+                        <a href="/patti" className="text-black/50 hover:text-vibrant-red font-bold transition-colors flex items-center gap-1 text-sm bg-black/5 px-3 py-1.5 rounded-full hover:bg-black/10">
+                            <Sparkles className="w-4 h-4" /> Manage Shop
+                        </a>
+                        <p className="text-black/50 text-sm font-medium">
+                            Made by <a href="https://nasware.org" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-black font-bold transition-colors hover:underline decoration-2 underline-offset-4 decoration-vibrant-red/30">Nas</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
